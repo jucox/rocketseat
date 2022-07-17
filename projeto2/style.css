@@ -29,6 +29,7 @@ header {
 
 .menu a + a {
     margin-left: 50px;
+    opacity: 0.5;
 }
 
 .menu a:hover {
