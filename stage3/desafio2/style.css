@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #BFD7E4;
+    font-family: 'Poppins', sans-serif;
+}
+
+header::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 465px;
+    background: #293241;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    color: #FFF;
+    text-align: center;
+}
+
+header h1 {
+    font: 400 36px 'Staatliches', cursive;
+    line-height: 45px;
+    margin-top: 107px;
+}
+
+header p {
+    line-height: 24px;
+}
+
+header img {
+    margin: 24.5px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 750px;
+    margin: 0px auto 100px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+.form-header {
+    background: #F67669;
+    border-radius: 20px 20px 0px 0px;
+    height: 133px;
+    color: #FFF;
+    font: 400 24px 'Staatliches', cursive;
+    line-height: 34px;
+    padding: 50px 275px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset legend {
+    text-align: center;
+    border-bottom: solid 1px #E6E6F0;
+    width: 100%;
+    font: 400 24px 'Staatliches', cursive;
+    line-height: 34px;
+    color: #253B51;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper label,
+.input-checkbox label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 10px;
+}
+
+.input-wrapper label span:hover {
+    color: #4E4958;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    font: normal 16px 'Poppins', sans-serif;
+    padding: 0px 20px;
+    color: #4E4958;
+}
+
+.input-wrapper input:invalid,
+.input-wrapper select:invalid,
+.input-wrapper textarea:invalid {
+    border: solid 1px #F67669;
+}
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 .input-wrapper {
+    width: 100%;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.input-wrapper textarea {
+    height: 170px;
+    max-width: 608px;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+.input-checkbox {
+    position: relative;
+}
+
+.input-checkbox input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.input-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input-checkbox label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    display: block;
+}
+
+.input-checkbox input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");;
+}
+
+.input-checkbox input:focus + label::before {
+    outline: 2px solid #000;
+}
+
+.col-3 {
+    display: flex;
+    gap: 32px;
+}
+
+.col-3 > .input-wrapper:nth-child(1) {
+    width: 100%;
+}
+
+.col-2-time {
+    display: flex;
+    gap: 10px;
+}
+
+form button {
+    margin: 30px 64px 64px;
+    background: #F67669;
+    border-radius: 8px;
+    font: 400 20px 'Staatliches', cursive;
+    line-height: 26px;
+    color: #FFF;
+    border: none;
+    height: 50px;
+}
+
+form button:hover {
+    background: #CE6155;
+    cursor: pointer;
+}
