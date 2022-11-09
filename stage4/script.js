@@ -135,7 +135,6 @@ for (let brother of brothers) {
 
 alert(brothersInformation)
 
-*/
 
 // CÁLCULO DE IMC DOS IRMÃOS
 
@@ -181,3 +180,5 @@ const printBrotherIMC = (brother) => {
 for (let brother of brothers) {
     alert(printBrotherIMC(brother))
 }
+
+*/
