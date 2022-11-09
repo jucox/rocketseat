@@ -57,6 +57,7 @@ main {
     display: grid;
     gap: 3.2rem;
     animation: downtop 700ms 350ms backwards;
+    margin-bottom: 100px;
 }
 
 .card {
