@@ -7,10 +7,7 @@ const inputNumber = document.querySelector('#inputNumber')
 let randomNumber = Math.round(Math.random() * 10)
 let numberOfAttempts = 0
 
-console.log(randomNumber)
-inputNumber.focus()
-
-// EVENTOS -> O primeiro parâmetro é o evento adicionado, o segundo é a função que será executada
+// EVENTOS
 btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
 document.addEventListener('keydown', hitEnter)
@@ -28,16 +25,14 @@ function handleTryClick(event) {
             if (numberOfAttempts > 1) {
                 screen2.querySelector('.screen2 h1').innerText = `Acertou em ${numberOfAttempts} tentativas!`
             } else {
-                document
                 screen2.querySelector('.screen2 h1').innerText = `Acertou em ${numberOfAttempts} tentativa!`
             }
         }
     } else {
-        alert('Insira um número entre 0 e 10!')
+        alert('Insira um número entre 1 e 10!')
     }
     
     inputNumber.value = ''
-    inputNumber.focus()
 }
 
 function handleResetClick() {
