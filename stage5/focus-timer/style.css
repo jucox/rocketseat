@@ -1,0 +1,128 @@
+:root {
+    --text-color: #323238;
+    --bg-button-color: #E1E1E6;
+    --bg-button-hover-color: #02799D;
+    --light-color: #FFF;
+
+    --font-family: 'Roboto', sans-serif;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 82rem;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+main .timer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main .timer .clock {
+    font-size: 12.6rem;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    display: flex;
+}
+
+main .timer .controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .timer .controls button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+main .timer .controls button svg path {
+    fill: var(--text-color);
+    transition: .5s;
+}
+
+main .timer .controls button:hover svg path {
+    fill: var(--bg-button-hover-color);
+}
+
+main .songs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 30rem;
+}
+
+main .songs button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 15rem;
+    border: none;
+    border-radius: 2.5rem;
+    background: var(--bg-button-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+main .songs button:hover {
+    background: var(--bg-button-hover-color);
+}
+
+main .songs svg path {
+    fill: var(--text-color);
+    transition: .5s;
+}
+
+main .songs button:hover svg path {
+    fill: var(--light-color);
+}
+
+.nature.soundPlaying {
+    background: #63A375;
+}
+
+.nature.soundPlaying svg path {
+    fill: var(--light-color);
+}
+
+.rain.soundPlaying {
+    background: var(--bg-button-hover-color);
+}
+
+.rain.soundPlaying svg path {
+    fill: var(--light-color);
+}
+
+.coffee.soundPlaying {
+    background: #32292F;
+}
+
+.coffee.soundPlaying svg path {
+    fill: var(--light-color);
+}
+
+.fire.soundPlaying {
+    background: #E01A4F;
+}
+
+.fire.soundPlaying svg path {
+    fill: var(--light-color);
+}
