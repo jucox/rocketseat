@@ -1,8 +1,9 @@
 :root {
-    --text-color: #323238;
+    --dark-color: #121214;
+    --light-color: #FFF;
+
     --bg-button-color: #E1E1E6;
     --bg-button-hover-color: #02799D;
-    --light-color: #FFF;
 
     --font-family: 'Roboto', sans-serif;
 
@@ -17,6 +18,29 @@
 
 body {
     font-size: 16px;
+    position: relative;
+    transition: .5s;
+}
+
+.colormode {
+    position: absolute;
+    top: 6rem;
+    right: 6rem;
+    cursor: pointer;
+}
+
+.colormode path {
+    fill: var(--dark-color);
+    transition: .5s;
+}
+
+.colormode:hover path {
+    fill: var(--bg-button-hover-color);
+}
+
+.light {
+    top: 5.65rem;
+    right: 5.65rem;
 }
 
 main {
@@ -33,13 +57,15 @@ main .timer {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    user-select: none;
 }
 
 main .timer .clock {
     font-size: 12.6rem;
     font-family: var(--font-family);
-    color: var(--text-color);
+    color: var(--dark-color);
     display: flex;
+    transition: .5s;
 }
 
 main .timer .controls {
@@ -54,7 +80,7 @@ main .timer .controls button {
 }
 
 main .timer .controls button svg path {
-    fill: var(--text-color);
+    fill: var(--dark-color);
     transition: .5s;
 }
 
@@ -87,7 +113,7 @@ main .songs button:hover {
 }
 
 main .songs svg path {
-    fill: var(--text-color);
+    fill: var(--dark-color);
     transition: .5s;
 }
 
@@ -125,4 +151,8 @@ main .songs button:hover svg path {
 
 .fire.soundPlaying svg path {
     fill: var(--light-color);
+}
+
+.hide {
+    display: none;
 }
